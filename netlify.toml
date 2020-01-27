@@ -1,0 +1,14 @@
+[context.production]
+    publish = "book/"
+
+[context.deploy-preview]
+    publish = "book/"
+
+# Example redirects
+# [[redirects]]
+#     from = "/*"
+#     to = "/blog/:splat"
+
+# [[redirects]]
+#     from = "/old-path"
+#     to = "/new-path"
