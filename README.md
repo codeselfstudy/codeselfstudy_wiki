@@ -24,6 +24,6 @@ Images can go in the `src/images` directory. Here's an example of how to load an
 
 ## License
 
-The content in the `src` directory is licensed under an [Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)](https://creativecommons.org/licenses/by-sa/3.0/)  license, which is the same license that Wikipedia uses.
+Except where otherwise specified, the content in the `src` directory is licensed under an [Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)](https://creativecommons.org/licenses/by-sa/3.0/)  license, which is the same license that Wikipedia uses.
 
 Please only submit content that you have created yourself. By submitting content to this repo, you agree to license the content under that license. Like any wiki, your content will probably be edited by other users.
