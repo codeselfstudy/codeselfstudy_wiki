@@ -4,11 +4,9 @@ The [programming wiki](https://wiki.codeselfstudy.com/) for Code Self Study.
 
 ## Contributing
 
-To contribute, make a pull request.
+To contribute, make a pull request. Ask an organizer at a meetup if you would like assistance.
 
 ## Development
-
-Ask an organizer at a meetup if you would like assistance.
 
 Install [mdbook](https://github.com/rust-lang/mdBook) on your computer and run this command to serve it on port 3000:
 
