@@ -12,6 +12,7 @@ script:
 - mdbook build . && mdbook test .
 deploy:
   provider: netlify
+  prod: true
   site: 4c1fa506-6199-4da1-a415-f8724cc7c5fb
   edge: true
   auth:
