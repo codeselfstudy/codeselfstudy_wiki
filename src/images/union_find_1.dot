@@ -1,0 +1,9 @@
+digraph UnionFind1 {
+    0;
+    1;
+    9 -> 2  [arrowhead=none];
+    9 -> 4 -> 3  [arrowhead=none];
+    6 -> 5 [arrowhead=none];
+    7;
+    8;
+}

@@ -18,6 +18,10 @@ Then visit localhost:3000.
 
 To add new pages, edit the `src/SUMMARY.md` file. Adding new items there will automatically create new pages.
 
+Images can go in the `src/images` directory. Here's an example of how to load an image:
+
+![diagram](./src/images/union_find_1.png)
+
 ## License
 
 The content in the `src` directory is licensed under an [Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)](https://creativecommons.org/licenses/by-sa/3.0/)  license, which is the same license that Wikipedia uses.
