@@ -1,14 +1,20 @@
-[context.production]
-    publish = "book/"
+[build]
+  # base = ""
+  publish = "book/"
+  # Default build command.
+  # command = "echo 'default context'"
 
-[context.deploy-preview]
-    publish = "book/"
+# [context.production]
+#   publish = "book/"
+
+# [context.deploy-preview]
+#   publish = "book/"
 
 # Example redirects
-# [[redirects]]
-#     from = "/*"
-#     to = "/blog/:splat"
+[[redirects]]
+  from = "/test-redirect"
+  to = "/dummy-404"
 
 # [[redirects]]
-#     from = "/old-path"
-#     to = "/new-path"
+#   from = "/old-path"
+#   to = "/new-path"
