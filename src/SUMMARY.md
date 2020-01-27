@@ -6,5 +6,5 @@
     - [JavaScript](./guides/javascript.md)
     - [Python](./guides/python.md)
 - [Data Structures and Algorithms](./algorithms/index.md)
-    - [Big O](./algorithms/big_o.md)
+    - [Big O](./algorithms/big-o.md)
     - [Linked Lists](./algorithms/linked-list.md)
