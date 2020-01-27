@@ -1,6 +1,6 @@
 # Code Self Study Wiki
 
-The [programming wiki](https://wiki.codeselfstudy.com/) for Code Self Study.
+The [programming wiki](https://wiki.codeselfstudy.com/) for Code Self Study. For the main Code Self Study website, see [this repo](https://github.com/codeselfstudy/codeselfstudy).
 
 [![Build Status](https://travis-ci.org/codeselfstudy/codeselfstudy_wiki.svg?branch=master)](https://travis-ci.org/codeselfstudy/codeselfstudy_wiki)
 
