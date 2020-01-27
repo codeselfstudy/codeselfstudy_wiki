@@ -1,22 +1,21 @@
 language: rust
 sudo: false
 cache:
-    - cargo
-
+- cargo
 rust:
-    - stable
-
+- stable
 before_script:
-    - "(test -x $HOME/.cargo/bin/cargo-install-update || cargo install cargo-update)"
-    - (test -x $HOME/.cargo/bin/mdbook || cargo install --vers "^0.3" mdbook)
-    - cargo install-update -a
-
+- "(test -x $HOME/.cargo/bin/cargo-install-update || cargo install cargo-update)"
+- (test -x $HOME/.cargo/bin/mdbook || cargo install --vers "^0.3" mdbook)
+- cargo install-update -a
 script:
-    - mdbook build . && mdbook test .
-
+- mdbook build . && mdbook test .
 deploy:
-    provider: netlify
-    site: 4c1fa506-6199-4da1-a415-f8724cc7c5fb
-    edge: true
-    auth:
-        secure: f1ztglQ8rMoGpRqonL+gFuBGBoV/SmzAwRwh+OoO3a2zciWB3yW/TIRvTxA50Ap+4ug7hEDG6EH7LAv4g7Vzj5duoR+cOcLxisZifA4kE4YDBTvr41hNyQvjCqZ2zoPPueLjDi3Iz2CovCuHUV1Klp5oY29VYQYx8BjYMIsu3Zb04+/T971ZPCIJYwZD3V5E0n28WFqEFcrN42eypPHw4e6Mw66EXF3kBGwtzWU6lmu/mdaEcYOiV8Sjyd+GOy7hgnebHLMZ1DmBTi3btfG/e3eHymW02FIdzNcGNO6OnFaXkz4Fgu9ojltmYzgZxLVJmo6QaXPqloicD0RqtdHr511XGr4Y1ozu81xV4Zy6Yc+3uvzbfz0dhXsNG8gx93Cpn26S9b4HuF2c7aG5hSzO9QxiK4m36alAmMYot4WRkX6AHyzb+9b1jZBE2+g9F6E0wSy+JoBt3LawsESBZHvz2hsxBBohMT6iVCig85d93Vk6acwiyktTkDlvqLS/iScSq08+3Qgw400ykQar6hoqWYh7P+gSxZ35SI+rcuhBCzDH7IgjpH0yYDYnbv+mPjZV3TWuc1ebmWBYeaPvrzSZvJrOIH81qALgZ9lyRqB8MTTyT28Rj5ahV3GSxh93SPAgYXS7vzU8/W1FAWNySlHP3veiAfMU7+UqaUNifxvuQA8=
+  provider: netlify
+  site: 4c1fa506-6199-4da1-a415-f8724cc7c5fb
+  edge: true
+  auth:
+    secure: f1ztglQ8rMoGpRqonL+gFuBGBoV/SmzAwRwh+OoO3a2zciWB3yW/TIRvTxA50Ap+4ug7hEDG6EH7LAv4g7Vzj5duoR+cOcLxisZifA4kE4YDBTvr41hNyQvjCqZ2zoPPueLjDi3Iz2CovCuHUV1Klp5oY29VYQYx8BjYMIsu3Zb04+/T971ZPCIJYwZD3V5E0n28WFqEFcrN42eypPHw4e6Mw66EXF3kBGwtzWU6lmu/mdaEcYOiV8Sjyd+GOy7hgnebHLMZ1DmBTi3btfG/e3eHymW02FIdzNcGNO6OnFaXkz4Fgu9ojltmYzgZxLVJmo6QaXPqloicD0RqtdHr511XGr4Y1ozu81xV4Zy6Yc+3uvzbfz0dhXsNG8gx93Cpn26S9b4HuF2c7aG5hSzO9QxiK4m36alAmMYot4WRkX6AHyzb+9b1jZBE2+g9F6E0wSy+JoBt3LawsESBZHvz2hsxBBohMT6iVCig85d93Vk6acwiyktTkDlvqLS/iScSq08+3Qgw400ykQar6hoqWYh7P+gSxZ35SI+rcuhBCzDH7IgjpH0yYDYnbv+mPjZV3TWuc1ebmWBYeaPvrzSZvJrOIH81qALgZ9lyRqB8MTTyT28Rj5ahV3GSxh93SPAgYXS7vzU8/W1FAWNySlHP3veiAfMU7+UqaUNifxvuQA8=
+notifications:
+  slack:
+    secure: dl3+3IOcnraGhpnyL97WXU8qd8op2WZvW8rz0gghPzEDrcUtPYuSyiK5qGsrUd0EW1QNQQsYPnXC7BdYcc9ODEUzgyADJNqZtfsQiWilVHUJbxXdjU4MuOKOxGOWyvOtWNCycr6SAbJqWhWgSzVSbbOLqLCFDoIenq7YvGEK1uubN2jb2wA2nzA6z6jNio+rn/viMehbztPTOzg7YQlUjZ4mm6+8yEI1zj12//SqJTA80vlGTpp7rw39hmqnTFj3LCYnIOfMw6OvdcSFJe6u+x0BvX/GKKXDA/jvEEIDCCJv6DB2SWCjIVjmErZcJdJFwTrodZtHSMurBGR5sKqu7cIHcYbA+xWso30btLVNA6jni9hjoCEEXZeMzTV2fuD6MesYosRfyy+Mi/eGpmvZssZkNVMkOsilzSAU/E0NizHjEFHlbNbO6mlUceHrH5bsOfFnbLfZpOPutOKn7ZY3CkRnkqa9KJaEHgPef+BniSacfz0DRfUuLbz9NX/5JMDROzY7gq2egCdyeThgXAYto4Hj8tBGDJ8dJr8lcJ34So9Woown8FBZVGYUFsfoQc4A7CIooV7i1AQVaKCpJ6TVK+lvZJRkR0Qc8Y+IKWcROPMb9orO8WlLlI/HHRqUL9qEGGOiUpCuvXctKtW2S3ZWYAXGpxeXSD57HYAj63/0pr4=
