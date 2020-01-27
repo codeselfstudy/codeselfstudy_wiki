@@ -2,6 +2,8 @@
 
 The [programming wiki](https://wiki.codeselfstudy.com/) for Code Self Study.
 
+[![Build Status](https://travis-ci.org/codeselfstudy/codeselfstudy_wiki.svg?branch=master)](https://travis-ci.org/codeselfstudy/codeselfstudy_wiki)
+
 ## Contributing
 
 To contribute, make a pull request. Ask an organizer at a meetup if you would like assistance.
