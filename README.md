@@ -22,7 +22,7 @@ To add new pages, edit the `src/SUMMARY.md` file. Adding new items there will au
 
 Images can go in the `src/images` directory. Here's an example of how to load an image:
 
-![diagram](./src/images/union-find_1.png)
+![diagram](./src/images/union-find-1.png)
 
 ## License
 
