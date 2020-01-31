@@ -30,7 +30,7 @@ Click on the name of a command for more information.
 
 An alternative way to move around and keep track of where you've been is to use `dirs`.
 
-* `dirs`
+* [`dirs`](../terminal/dirs.md) -- a stack of recently visited directories
 * `pushd` -- move to another directory with a bookmark (actually a stack of directories you've jumped from, so you can use it multiple times)
 * `popd` -- jump back to the place where you pushd'd from
 
