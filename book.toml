@@ -4,3 +4,10 @@ language = "en"
 multilingual = false
 src = "src"
 title = "Code Self Study Wiki"
+
+[output.html]
+mathjax-support = true
+git-repository-url = "https://github.com/codeselfstudy/codeselfstudy_wiki"
+
+[output.html.fold]
+enable = true
