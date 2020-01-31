@@ -1,4 +1,4 @@
-# Terminal
+# The Terminal
 
 This section contains information for learning about basic GNU or other command line tools.
 
