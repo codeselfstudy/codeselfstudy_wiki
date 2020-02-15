@@ -10,6 +10,8 @@ To contribute, make a pull request. Ask an organizer at a meetup if you would li
 
 ## Development
 
+**Tip:** pushing or merging to `master` will trigger deployment on Netlify.
+
 Install [mdbook](https://github.com/rust-lang/mdBook) on your computer and run this command to serve it on port 3000:
 
 ```text
