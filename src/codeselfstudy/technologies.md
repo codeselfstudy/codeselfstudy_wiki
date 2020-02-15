@@ -106,3 +106,5 @@ Phoenix/Postgres is coming later for real-time features and LiveView experiments
 ## WebAssembly / Rust
 
 TODO: visualization of algorithms & data structures in WebAssembly (Rust).
+
+I'm picturing something along the general lines of [this](https://www.cs.usfca.edu/~galles/visualization/Dijkstra.html) but in WebAsseembly. (That code is [here](https://www.cs.usfca.edu/~galles/visualization/source.html).)

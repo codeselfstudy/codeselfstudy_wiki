@@ -15,6 +15,6 @@ The website repo can be found [here](https://github.com/codeselfstudy/codeselfst
 TODO
 
 They can be found [here](https://browser.codeselfstudy.com/).
-### New Site
+### News Site
 
 TODO

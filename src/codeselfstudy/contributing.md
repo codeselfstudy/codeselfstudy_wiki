@@ -1,10 +1,12 @@
 # Contributing
 
-TODO
+TODO: this page is a work in progress.
 
 ## Coding Style
 
 Please use [Prettier.js](https://prettier.io/) to format the JavaScript, Sass/CSS, and HTML code. Every major editor has a plugin to auto-format the files on save (including [one for vscode](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.JavaScriptPrettier)).
+
+TODO: we could probably set this up with git hooks. I think there is a node module that runs git hooks from `package.json`.
 
 ## JavaScript, CSS, HTML
 
