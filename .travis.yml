@@ -10,6 +10,9 @@ before_script:
 - cargo install-update -a
 script:
 - mdbook build . && mdbook test .
+branches:
+  only:
+  - master
 deploy:
   provider: netlify
   prod: true
