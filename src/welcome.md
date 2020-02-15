@@ -1,7 +1,5 @@
-# Welcome
+# Code Self Study Wiki
 
-This is the future home of the new [Code Self Study](https://codeselfstudy.com/) wiki.
+This is the home of the new Code Self Study Wiki. It's still under construction, but more content is coming soon.
 
-More content coming soon.
-
-You can contribute [on Github](https://github.com/codeselfstudy/codeselfstudy_wiki).
+To edit or add pages, make a pull request on the [Github repo](https://codeselfstudy.com/).
