@@ -25,6 +25,7 @@
     - [less](./terminal/less.md)
     - [nano](./terminal/nano.md)
     - [cat](./terminal/cat.md)
+    - [bat](./terminal/bat.md)
     - [top](./terminal/top.md)
     - [man](./terminal/man.md)
     - [tldr](./terminal/tldr.md)

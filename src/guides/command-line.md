@@ -6,7 +6,7 @@ This is a guide for becoming more familiar with the command line. These are some
 
 Most commands come with documentation in the form of "man[ual] pages". To read the man page for a command use the [`man` command](../terminal/man.md).
 
-Example: to read the documentation for the `ls` command, type `man ls` in a terminal. You can also search Google for information on any command.
+**Example:** to read the documentation for the `ls` command, type `man ls` in a terminal. You can also search Google for information on any command.
 
 If the `man` pages are too overwheming, there is also a simpler tool called [tldr](../terminal/tldr.md).
 
@@ -17,9 +17,11 @@ Click on the name of a command for more information.
 ### Basics
 
 * `clear` -- clear the terminal. Also ctrl-l
+
+### Documentation
+
 * `man` -- read the built-in documentation
-* `tldr`
-* `apropos` -- can't remember a command? Use this to find commands about a keyword, like: `apropos wireless`
+* `tldr` -- shorter, simpler documentation for commands
 
 ### Where Am I?
 
@@ -53,7 +55,8 @@ An alternative way to move around and keep track of where you've been is to use 
 
 ### Programs
 
-* `which`
+* `which` -- tells you where a program is located
+* `apropos` -- can't remember a command? Use this to find commands about a keyword, like: `apropos wireless`
 
 ### Networking
 
@@ -63,15 +66,16 @@ An alternative way to move around and keep track of where you've been is to use 
 
 ### Reading and Editing Files
 
-* `less` -- display output with pagination
+* [`less`](/terminal/less.md) -- display output with pagination
 * [`vim`](/guides/vim.md) -- type `vimtutor` and see the [[Vim]] page.
 * `nano` -- simple console editor
-* `cat` -- display a file and/or concatenate it
-* `tee` -- redirect the output to a file and the screen at the same time. E.g., `ls -1 *.py | wc -l | tee count.txt` which counts the number of Python files in your directory, writes it to the screen, and saves it to a file.
-* `wc` -- count things: lines, bytes, characters, words, etc. Example: `wc -l filename.txt` will count the lines in a file.
-* `head`
-* `tail`
-* `diff`
+* [`cat`](/terminal/cat.md) -- display a file and/or concatenate it.
+* [`bat`](/terminal/bat.md) -- like `cat` but with syntax highlighting and other improvements
+* [`tee`](/terminal/tee.md) -- redirect the output to a file and the screen at the same time. E.g., `ls -1 *.py | wc -l | tee count.txt` which counts the number of Python files in your directory, writes it to the screen, and saves it to a file.
+* [`wc`](/terminal/wc.md) -- count things: lines, bytes, characters, words, etc. Example: `wc -l filename.txt` will count the lines in a file.
+* [`head`](/terminal/head.md) -- view the first lines of a file
+* [`tail`](/terminal/tail.md) -- view the last lines of a file
+* [`diff`](/terminal/diff.md) -- compare two different files
 
 ### Users, Groups, and Permissions
 

@@ -6,15 +6,14 @@ This section of the wiki contains documentation for our group's projects. Use th
 
 ### Code Self Study Website
 
-TODO
-
-The website repo can be found [here](https://github.com/codeselfstudy/codeselfstudy/).
+The website repo can be found [here](https://github.com/codeselfstudy/codeselfstudy/). See the main `README.md` in that repo for installation instructions.
 
 ### Browser Extensions
 
-TODO
+The browser extensions (Firefox and Chrome) can be found at [codeselfstudy/codeselfstudy_browser_extension](https://github.com/codeselfstudy/codeselfstudy_browser_extension).
 
-They can be found [here](https://browser.codeselfstudy.com/).
+They can be installed [here](https://browser.codeselfstudy.com/).
+
 ### News Site
 
 TODO
