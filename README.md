@@ -2,6 +2,8 @@
 
 This repo contains the [programming wiki](https://wiki.codeselfstudy.com/) for Code Self Study. For the main Code Self Study website, see [this repo](https://github.com/codeselfstudy/codeselfstudy).
 
+This repo also holds the documentation for the main website.
+
 [![Build Status](https://travis-ci.org/codeselfstudy/codeselfstudy_wiki.svg?branch=master)](https://travis-ci.org/codeselfstudy/codeselfstudy_wiki)
 
 ## Contributing
