@@ -19,6 +19,8 @@ TODO:
 
 Check out the `containers` directory. Each directory there is a separate Docker container.
 
+For an introduction to Docker, see our [Docker guide](/guides/docker.md).
+
 Here's a diagram. See the other pages in this section for details.
 
 ![Overview](../images/servers.png)

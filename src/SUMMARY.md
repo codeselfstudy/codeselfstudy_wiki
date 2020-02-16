@@ -3,6 +3,7 @@
 - [Welcome](./welcome.md)
 - [Study Guides](./guides/index.md)
     - [Command Line](./guides/command-line.md)
+    - [Docker](./guides/docker.md)
     - [JavaScript](./guides/javascript.md)
     - [Python](./guides/python.md)
     - [Vim Editor](./guides/vim.md)
