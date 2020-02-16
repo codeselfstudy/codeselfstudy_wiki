@@ -1,10 +1,10 @@
 # Docker Guide
 
-At the moment, this Docker guide focuses on tips that can help while working on the [Code Self Study website](https://github.com/codeselfstudy/codeselfstudy). To learn the basics, try [the official Docker guides](https://docs.docker.com/get-started/).
+At the moment, this Docker guide focuses on tips that can help while working on the [Code Self Study website](https://github.com/codeselfstudy/codeselfstudy). To learn the basics of Docker, it might be a good idea to start with [the official Docker guides](https://docs.docker.com/get-started/).
 
 ## Basic Concepts
 
-A Docker container is something like a virtual computer that runs inside of your computer. Instead of installing software (like a database) on your computer directly, you can put it in its own container and run it from there. Multiple containers can be networked with each other to communication. The end result is that all the programmers on a project have the same development environment.
+A Docker container is something like a virtual computer that runs inside of your computer. Instead of installing software (like a database) on your computer directly, you can put it in its own container and run it from there. Multiple containers can be networked with each other to communicate. An end result of using Docker is that all the programmers on a project have the same development environment, including the same versions of all the required software.
 
 A **Docker image** is a kind of blueprint for a container.
 
@@ -28,7 +28,9 @@ To list your Docker containers, you would use:
 $ docker container ps
 ```
 
-You can download premade Docker images with the `docker pull` command, but for the Code Self Study website, it creates custom images with Dockerfiles. If you look inside the `Dockerfile.dev` files in the project, you can see the commands that are run.
+The built-in help is good -- just type `docker container` to see the options for that sub-command.
+
+You can download pre-made Docker images with the `docker pull` command, but the Code Self Study website creates custom images by using Docker Compose and Dockerfiles. If you look inside the `Dockerfile.dev` files in the project, you can see the commands that are run.
 
 For example, the `Dockerfile.dev` file for the Express.js server looks something like this:
 
@@ -49,7 +51,7 @@ It says:
 1. Copy the `package.json` file(s) to the working directory.
 1. Install the dependencies.
 1. Copy the Express.js code into the working directory.
-1. Expose port 5000 where the Express server will be running.
+1. Suggest exposing port 5000 for the Express server.
 1. Start the Express server with `npm start`.
 
 A `Dockerfile` can be built manually, but in the case of Code Self Study, all the containers are built with the `docker-compose.yml` file. Take a look [in that file](https://github.com/codeselfstudy/codeselfstudy/blob/master/docker-compose.yml) to see how the `Dockerfiles` are used.
@@ -78,7 +80,7 @@ express_api:
 
 ## Restarting Containers
 
-Rebuilding the entire application can take a while, and sometimes you will just want to restart one container (like the one that contains Gatsby).
+Rebuilding the entire application can take a while, and sometimes you will just want to restart one container (like the Gatsby container).
 
 Here's how to restart a Docker container.
 
