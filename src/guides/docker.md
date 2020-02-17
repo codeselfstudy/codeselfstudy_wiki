@@ -96,7 +96,7 @@ d2d54e20f529        mongo                       "docker-entrypoint.s…"   6 min
 75df2bbce79f        redis:latest                "docker-entrypoint.s…"   6 minutes ago       Up 6 minutes        6379/tcp               codeselfstudy_redis_1
 ```
 
-If the container that you want to restart is `codeselfstudy/codeselfstudy_gatsby_1`, then copy the container ID and restart it like this:
+If the container that you want to restart is `codeselfstudy_gatsby_1`, then copy the container ID and restart it like this:
 
 ```text
 $ docker container restart b9b10f71037f
