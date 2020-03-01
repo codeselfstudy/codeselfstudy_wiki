@@ -140,7 +140,7 @@ And delete them with this command:
 $ docker image rm $(docker image ls -f "dangling=true" -q)
 ```
 
-You can also reclaim space with this command:
+Or just use this command to remove the dangling images, stopped containers, and reclaim other space:
 
 ```text
 $ docker system prune
