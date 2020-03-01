@@ -128,6 +128,18 @@ To remove an image, for example the unnamed image above, refer to it by the `IMA
 $ docker image rm 7d3aa3d696c0
 ```
 
+You can list the dangling images (untagged as `<none>`) with this command:
+
+```text
+$ docker image ls -f "dangling=true" -q
+```
+
+And delete them with this command:
+
+```text
+$ docker image rm $(docker image ls -f "dangling=true" -q)
+```
+
 You can also reclaim space with this command:
 
 ```text
