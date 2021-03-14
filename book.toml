@@ -8,6 +8,7 @@ title = "Code Self Study Wiki"
 [output.html]
 mathjax-support = true
 git-repository-url = "https://github.com/codeselfstudy/codeselfstudy_wiki"
+google-analytics = "UA-37305501-3"
 
 [output.html.fold]
 enable = true
