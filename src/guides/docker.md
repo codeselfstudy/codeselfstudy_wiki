@@ -156,3 +156,53 @@ Containers          5                   5                   263B                
 Local Volumes       58                  5                   784.7MB             428.7MB (54%)
 Build Cache         0                   0                   0B                  0B
 ```
+
+# Docker Cookbook
+
+Here are some quick tips for common tasks.
+
+## How to run a stopped container with a custom command
+
+Get the ID of the stopped container:
+
+```bash
+docker container ps -a
+```
+
+```bash
+docker container commit <container_id> tmp_container
+```
+
+The name `tmp_container` is arbitrary. Name it whatever you want.
+
+Then run it like this:
+
+```bash
+docker container run -it --entrypoint=sh tmp_container
+```
+
+More info is [here](https://stackoverflow.com/a/39329138).
+
+## How to manage containers with `docker-compose`
+
+Here are some examples of how to run commands inside of containers by name when using `docker-compose`.
+
+```bash
+# start up the docker containers
+docker-compose -f docker-compose.dev.yml up --build
+
+# run commands inside of containers
+docker-compose -f docker-compose.dev.yml exec django python manage.py makemigrations
+docker-compose -f docker-compose.dev.yml exec django python manage.py migrate
+docker-compose -f docker-compose.dev.yml exec django python manage.py createsuperuser
+
+# restart containers
+docker-compose -f docker-compose.dev.yml exec django restart
+
+# load seed data
+docker-compose -f docker-compose.dev.yml exec django python manage.py loaddata apps/app_name/fixtures/my_data.fixtures.json
+docker-compose -f docker-compose.dev.yml exec django python manage.py loaddata apps/app_name/fixtures/other_data.yaml
+
+# shut down docker containers
+docker-compose -f docker-compose.dev.yml down
+```
